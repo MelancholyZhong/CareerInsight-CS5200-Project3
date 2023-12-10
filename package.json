@@ -1,0 +1,24 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "MongoDB version of career insight, project 2 of CS5200",
+  "scripts": {
+    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www"
+  },
+  "dependencies": {
+    "redis": "^4.6.11",
+    "mongodb": "^6.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}

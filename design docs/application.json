@@ -1,0 +1,38 @@
+{
+  "application_id": 1,
+  "application_date": "2023-09-06",
+  "status": "Interviewing",
+  "position": {
+    "position_id": 321,
+    "title": "Software Engineer I",
+    "company": "Amazon",
+    "job_category": "Computer Science",
+    "salary": {
+      "base_salary": 123000,
+      "equity": 55000,
+      "bonus": 30000
+    }
+  },
+  "candidate": {
+    "user_id": 123,
+    "name": "Alice",
+    "job_interests": ["Computer Sicence", "Cybersecurity"],
+    "graduate_school": "Northeastern University"
+  },
+  "interview": [
+    {
+      "interview_type": "Virtual",
+      "date": "2023-09-12",
+      "stage": "Online Assessment",
+      "result": "Pass",
+      "rating": 3
+    },
+    {
+      "interview_type": "Virtual",
+      "date": "2023-09-20",
+      "stage": "Coding Interview",
+      "result": "Scheduled",
+      "rating": 4
+    }
+  ]
+}

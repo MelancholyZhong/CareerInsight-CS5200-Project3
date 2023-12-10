@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+
+  <% if (user) { %>
+  <form action="/users/<%=user.user_id%>/edit" method="post">
+    <div>
+      <label>User Id: <output><%= user.user_id %></output> </label>
+    </div>
+    <div>
+      <label>Name: <input type="text" id="name" name="name" value="<%= user.name%>" required> </label>
+    </div>
+    <div>
+      <label>Job Interests: <input type="text" id="job_interest" name="job_interest" value="<%= user.job_interest%>" required> </label>
+    </div>
+    <div>
+      <label>Graduate School: <input type="text" id="school" name="school" value="<%= user.school%>" required> </label>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+  <% } else {%>
+  <form action="/users/add" method="post">
+    <div>
+      <label>User Id:<input type="number" id="id" name="id" required></label>
+    </div>
+    <div>
+      <label>Name: <input type="text" id="name" name="name" required> </label>
+    </div>
+    <div>
+      <label>Job Interests: <input type="text" id="job_interest" name="job_interest" required> </label>
+    </div>
+    <div>
+      <label>Graduate School: <input type="text" id="school" name="school" required> </label>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+  <% }%>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <div>
+    <a type="button" href="/users/add">Add User</a>
+    <a type="button" href="/">All Positions</a>
+  </div>
+
+  <% users.forEach(function(user){ %>
+  <div>
+    <div>
+      <label>User Id: <output><%= user.user_id %></output> </label>
+    </div>
+    <label>Name: <output><%= user.name %></output> </label>
+  </div>
+  <div>
+    <label>Job Interests: <output><%= user.job_interest %></output> </label>
+  </div>
+  <div>
+    <label>Graduate School: <output><%= user.school %></output> </label>
+  </div>
+  <div>
+    <a type="button" href="/users/<%= user.user_id%>/edit">Edit</a>
+    <a type="button" href="/users/<%= user.user_id%>/delete">Delete</a>
+  </div>
+  </div>
+  <hr />
+  <% }); %>
+
+  <footer>
+    <div>Made by Yao with 🥶</div>
+  </footer>
+</body>
+
+</html>

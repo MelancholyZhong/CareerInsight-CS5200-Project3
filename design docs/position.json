@@ -1,0 +1,11 @@
+{
+  "position_id": 321,
+  "title": "Software Engineer I",
+  "company": "Amazon",
+  "job_catagory": "Computer Science",
+  "salary": {
+    "base_salary": 123000,
+    "equity": 55000,
+    "bonus": 30000
+  }
+}

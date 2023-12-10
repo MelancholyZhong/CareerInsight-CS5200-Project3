@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <div>
+    <a type="button" href="/positions/add">Add Position</a>
+    <a type="button" href="/users">All users</a>
+  </div>
+
+  <% positions.forEach(function(position){ %>
+  <div>
+    <div>
+      <label>Job Id: <output><%= position.position_id %></output> </label>
+    </div>
+    <div>
+      <label>Job Title: <output><%= position.title %></output> </label>
+    </div>
+    <div>
+      <label>Company name: <output><%= position.company %></output> </label>
+    </div>
+    <div>
+      <label>Base Salary: <output><%= position.salary.base_salary %></output> </label>
+      <label>Bonus: <output><%= position.salary.bonus %></output> </label>
+      <label>Equity: <output><%= position.salary.equity %></output> </label>
+    </div>
+    <div>
+      <a type="button" href="/positions/<%= position.position_id%>/edit">Edit</a>
+      <a type="button" href="/positions/<%= position.position_id%>/delete">Delete</a>
+    </div>
+  </div>
+  <hr />
+  <% }); %>
+
+  <footer>
+    <div>Made by Yao with 🥶</div>
+  </footer>
+</body>
+
+</html>

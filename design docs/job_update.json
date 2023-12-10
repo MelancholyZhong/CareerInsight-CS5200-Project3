@@ -1,0 +1,34 @@
+{
+  "update_id": 222,
+  "date": "2023-11-01",
+  "update_type": "new position",
+  "current_experience_time": 15,
+  "old_postion": {
+    "position_id": 321,
+    "title": "Software Engineer I",
+    "company": "Amazon",
+    "job_category": "Computer Science",
+    "salary": {
+      "base_salary": 123000,
+      "equity": 55000,
+      "bonus": 30000
+    }
+  },
+  "new_position": {
+    "position_id": 123,
+    "title": "Software Engineer I",
+    "company": "Google",
+    "job_category": "Computer Science",
+    "salary": {
+      "base_salary": 123000,
+      "equity": 55000,
+      "bonus": 30000
+    }
+  },
+  "user": {
+    "user_id": 123,
+    "name": "Alice",
+    "job_interests": ["Computer Sicence", "Cybersecurity"],
+    "graduate_school": "Northeastern University"
+  }
+}
