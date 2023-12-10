@@ -1,4 +1,4 @@
-# CS%5200 Project 3: Career Insight with Redis
+# CS5200 Project 3: Career Insight with Redis
 ## How to find the required parts
 
 A. The requirements document as a PDF: `design docs/Project 3_ Career Insights with Redis.pdf`, see the "update on Redis" section
